@@ -1,0 +1,8 @@
+{
+  "name": "ts-setup",
+  "description": "A setup example for projects with typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Lucas <daniellucas382@gmail.com>",
+  "license": "MIT"
+}
