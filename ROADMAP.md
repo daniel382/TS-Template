@@ -21,3 +21,10 @@ and update your dev command:
 ```yarn eslint --init```
 
 After ru these commands, install the dependencies seggested by eslint.
+
+## Configuring jest
+```yarn add -D jest ts-jest @types/jest```
+```yarn jest --init```
+```yarn add -D ```
+
+in `env` property, add `"jest": true` in your .eslintrc file.
