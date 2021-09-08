@@ -20,8 +20,7 @@
     "baseUrl": ".",
     "paths": {
       "@configs/*": ["./src/configs/*"],
-      "@usecases/*": ["./src/app/domain/usecases/*"],
-      "@models/*": ["./src/app/domain/models/*"]
+      "@types/*": ["./src/@types/*"]
     }
   }
 }
