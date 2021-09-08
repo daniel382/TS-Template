@@ -35,3 +35,9 @@ in `env` property, add `"jest": true` in your .eslintrc file.
 ## Configuring lint staged
 ```yarn add -D lint-staged eslint-plugin-standard eslint-config-standard-with-typescript```
 create the `.lintstagedrc.json` file.
+
+## Configurin husky
+```yarn add -D husky```
+```yarn husky install```
+```yarn husky add .husky/pre-commit 'yarn lint-staged'```
+```yarn husky add .husky/pre-push 'yarn test:ci'```
