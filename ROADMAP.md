@@ -31,3 +31,7 @@ in `env` property, add `"jest": true` in your .eslintrc file.
 
 ## Configuring babel
 ```yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver```
+
+## Configuring lint staged
+```yarn add -D lint-staged eslint-plugin-standard eslint-config-standard-with-typescript```
+create the `.lintstagedrc.json` file.

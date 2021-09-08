@@ -1,12 +1,12 @@
 module.exports = {
   presets: [
-    ['@babel/preset-env', { targets: { node: 'current' }}],
+    ['@babel/preset-env', { targets: { node: 'current' } }],
     '@babel/preset-typescript'
   ],
   plugins: [
     [
       'module-resolver', {
-        root: ['./'],
+        root: ['./src'],
         alias: {
           '@configs': ['./src/configs'],
           '@usecases': ['./src/app/domain/usecases'],
