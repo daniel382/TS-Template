@@ -6,8 +6,12 @@
   "author": "Daniel Lucas <daniellucas382@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node build/index.js",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./index.ts",
+    "clear": "rm -rf build/",
     "build": "babel . --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored",
-    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./index.ts"
+    "preprod": "yarn clear && yarn build",
+    "prod": "yarn start"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
