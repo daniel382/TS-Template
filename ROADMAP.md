@@ -28,3 +28,6 @@ After ru these commands, install the dependencies seggested by eslint.
 ```yarn add -D ```
 
 in `env` property, add `"jest": true` in your .eslintrc file.
+
+## Configuring babel
+```yarn add -D @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver```

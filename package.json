@@ -6,12 +6,19 @@
   "author": "Daniel Lucas <daniellucas382@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "babel . --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./index.ts"
   },
   "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-typescript": "^7.15.0",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.12.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.22.1",
