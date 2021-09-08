@@ -18,6 +18,7 @@ module.exports = {
   ],
   ignore: [
     'node_modules',
+    '.git',
     '**/*.spec.ts',
     '**/*.test.ts',
     'jest.config.ts',
