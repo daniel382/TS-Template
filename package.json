@@ -6,8 +6,8 @@
   "author": "Daniel Lucas <daniellucas382@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node build/index.js",
-    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./index.ts",
+    "start": "node build/src/index.js",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./src/index.ts",
     "clear": "rm -rf build/",
     "build": "babel . --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored",
     "preprod": "yarn clear && yarn build",
@@ -40,8 +40,5 @@
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.2"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   }
 }
